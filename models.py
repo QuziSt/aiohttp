@@ -22,6 +22,7 @@ class User(Base):
     posts = relationship('UserPost', back_populates="user", lazy='joined')
     
     
+    
 class UserPost(Base):
     __tablename__ = 'user_posts'
     
